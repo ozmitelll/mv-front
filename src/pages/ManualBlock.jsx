@@ -41,7 +41,7 @@ const ManualBlock = () => {
                             <p className={'font-urbanist text-white font-semibold md:text-[20px] text-[18px] md:w-4/5'}>Выбрать наиболее выгодную и надежную сделку</p>
                         </div>
                         {openIndex === 2 && (
-                            <div className={'font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px]'}>
+                            <div className={'font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px] overflow-hidden'}>
                                 <p>Выберите продавца из списка, ориентируясь на доступный резерв и курс</p>
                                 <p>Нажмите «Купить» и изучите информацию о продавце криптовалюты Bitcoin или другого токена</p>
                                 <p>Нажмите «Начать сделку»</p>
@@ -59,7 +59,7 @@ const ManualBlock = () => {
                             <p className={'font-urbanist text-white font-semibold md:text-[20px] text-[18px]'}>Войти в личный кабинет</p>
                         </div>
                         {openIndex === 3 && (
-                            <div className={'font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px]'}>
+                            <div className={'font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px] overflow-hidden'}>
                                 <p>Введите номер телефона и пароль, чтобы войти в личный кабинет на сайт.</p>
                                 <p>Если вы еще не регистрировали аккаунт на Totalcoin, но нажмите кнопку «Регистрация». Введите номер телефона и пароль, который будете использовать для получения доступа на сайт. Также пройти регистрацию можно с помощью мессенджеров, а скоро появится возможность создать аккаунт с помощью email.</p>
                             </div>
@@ -76,7 +76,7 @@ const ManualBlock = () => {
                             <p className={'font-urbanist text-white font-semibold md:text-[20px] text-[18px]'}>Выполнить обмен</p>
                         </div>
                         {openIndex === 4 && (
-                            <div className={'font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px]'}>
+                            <div className={`font-light text-[#CFCECE] w-full pb-4 md:text-[18px] text-[14px] overflow-hidden`}>
                                 <p>Переведите деньги по указанным реквизитам и дождитесь пока заявка будет обработана и средства поступят на Qiwi, карту или любым другим способом, который вы указали.</p>
                                 <p>Теперь вы можете произвести выгодный обмен на любое направление в любое время. А в личном кабинете приложения M&V coin, найти историю всех сделок.</p>
                             </div>

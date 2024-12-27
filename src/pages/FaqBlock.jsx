@@ -72,11 +72,12 @@ const FaqBlock = () => {
                             </svg>
                         </button>
                         <div
-                            className={`overflow-hidden transition-[max-height] duration-300 ${
-                                activeIndex === index ? "lg:max-h-[300px] max-h-[600px]" : "max-h-0"
+                            className={`overflow-hidden transition-all duration-300 ${
+                                activeIndex === index ? "max-h-screen" : "max-h-0"
                             }`}
                         >
-                            <div className="text-[#15344D] font-urbanist text-[16px] py-4 whitespace-pre-wrap leading-7">
+                            <div
+                                className="text-[#15344D] font-urbanist text-[16px] py-4 whitespace-pre-wrap leading-7">
                                 {faq.answer}
                             </div>
                         </div>
