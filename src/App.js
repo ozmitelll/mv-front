@@ -4,7 +4,7 @@ import TradeBlock from "./pages/TradeBlock";
 import ManualBlock from "./pages/ManualBlock";
 import FaqBlock from "./pages/FaqBlock";
 import CourseBlock from "./pages/CourseBlock";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 
 function App() {
     return (
