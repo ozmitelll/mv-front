@@ -36,7 +36,7 @@ const courseData = [
         change: '+6.86%',
         changeColor: 'text-green-500',
         capitalization: '$147,209,210,388.52',
-        supply: '57,187,870,382 XRP',
+        supply: '57,187,870 XRP',
         icon: Ripple,
     },
 ];
@@ -45,7 +45,7 @@ const CourseBlock = () => {
     return (
         <div
             className={
-                'relative bg-[#343434] w-full lg:h-screen h-[500px] lg:bg-[length:900px_500px] bg-[length:500px_300px] flex flex-col justify-center items-center xl:px-36 lg:px-16 px-12'
+                'relative bg-[#343434] w-full lg:h-screen h-[500px] lg:bg-[length:900px_500px] bg-[length:500px_300px] flex flex-col justify-center items-center xl:px-36 lg:px-16'
             }
             style={{
                 backgroundImage: `url(${Infinity})`,
@@ -55,25 +55,27 @@ const CourseBlock = () => {
         >
             <p
                 className={
-                    'absolute top-0 xl:left-36 lg:left-20 left-14   font-urbanist font-bold lg:text-[35px] text-[25px] text-white md:py-16 py-8 text-left w-full'
+                    'absolute top-0 xl:left-36 lg:left-20 left-14 font-urbanist font-bold lg:text-[35px] text-[25px] text-white md:py-16 py-8 text-left w-full'
                 }
             >
                 Самые точные курсы криптовалют онлайн
             </p>
             <Swiper
                 pagination={{ clickable: true }}
-                spaceBetween={16}
-                slidesPerView={1}
+                spaceBetween={42}
+                slidesPerView={1.4}
+                centeredSlides={true}
+                initialSlide={1}
                 breakpoints={{
-                    1024: { slidesPerView: 3 },
-                    768:{slidesPerView:2},
+                    1024: { slidesPerView: 3, spaceBetween: 32, centeredSlides: true },
+                    768: { slidesPerView: 2.2, spaceBetween: 24, centeredSlides: true },
                 }}
-                className="w-full px-6 lg:px-16 rounded-xl bg-transparent"
+                className="w-full px-6 lg:px-16 lg:rounded-xl "
             >
                 {courseData.map((course) => (
                     <SwiperSlide key={course.id}>
                         <div
-                            className="bg-black bg-opacity-35 backdrop-blur rounded-lg p-4 w-full h-[200px] flex flex-col justify-between drop-shadow-[8px_8px_35px_rgba(45,45,45,1)] shadow-[0_8px_25px_rgba(255,255,255,0.25)]"
+                            className="bg-black font-urbanist bg-opacity-35 backdrop-blur-sm rounded-lg p-4 lg:w-full w-[300px] md:h-[200px] flex flex-col justify-between drop-shadow-[8px_8px_35px_rgba(45,45,45,1)] shadow-[0_8px_25px_rgba(255,255,255,0.25)]"
                         >
                             <div className="flex items-center gap-4">
                                 <img src={course.icon} alt={course.name} className="w-12 h-12" />
