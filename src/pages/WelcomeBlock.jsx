@@ -9,7 +9,7 @@ import Header from "../components/Header";
 
 const WelcomeBlock = () => {
     return (
-        <div className={'flex h-full flex-col items-center justify-center '}>
+        <div className={'flex  flex-col items-center justify-center '}>
             <Header/>
             <div
                 className={'w-full xl:h-[636px] h-[730px]  flex flex-col-reverse lg:flex-row  justify-center items-center xl:px-32 lg:px-16'}>
