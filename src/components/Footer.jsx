@@ -4,9 +4,9 @@ import Apk from '../assets/icons/APK_PC.png'
 import Telegram from '../assets/icons/telegram.svg'
 import HeaderIcon from '../assets/icons/icon.svg';
 
-import AppStoreMob from '../assets/icons/SVGAPPSTORE.svg'
-import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.svg'
-import ApkMob from '../assets/icons/SVGAPK.svg'
+import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
+import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
+import ApkMob from '../assets/icons/SVGAPK.png'
 
 const Footer = () => {
     return (
@@ -21,9 +21,9 @@ const Footer = () => {
                     <p className={'font-urbanist underline text-left w-full '}>Контакты</p>
                     <div className={'flex lg:hidden flex-col-reverse items-start justify-between w-full gap-4'}>
                         <div className={'flex flex-col gap-4'}>
-                            <img src={AppStoreMob} alt="" className={'drop-shadow-2xl   shadow-2xl '}/>
-                            <img src={GooglePlayMob} alt="" className={'drop-shadow-2xl shadow-2xl'}/>
-                            <img src={ApkMob} alt="" className={'drop-shadow-2xl   shadow-2xl'}/>
+                            <img src={AppStoreMob} alt="" className={'drop-shadow-2xl   shadow-2xl h-[34px]'}/>
+                            <img src={GooglePlayMob} alt="" className={'drop-shadow-2xl shadow-2xl h-[34px]'}/>
+                            <img src={ApkMob} alt="" className={'drop-shadow-2xl   shadow-2xl h-[34px]'}/>
                         </div>
                         <img src={Telegram} alt="" className={' w-[50px] h-[50px]'}/>
                     </div>
