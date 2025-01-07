@@ -36,51 +36,51 @@ const RoadmapBlock = ({currentStage}) => {
                 className="w-full flex flex-col gap-8 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 xl:px-36 lg:px-16 px-12 xl:pb-0 lg:pb-0 pb-12">
                 <div className="flex text-white  ">
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>P2P-сервис</p>
                         <p className={'font-light'}>Приложение позиционируется как глобальная платформа для
                             криптоновостей.</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         II
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-light'}>Внедрение кошелька</p>
                         <p className={'font-semibold'}>Интеграция платежей</p>
                         <p className={'font-light'}>Запуск программы лояльности</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         IV
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Запуск собственного токена</p>
                         <p className={'font-light'}>Развитие экосистемы</p>
                         <p className={'font-semibold'}>Партнёрства</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         VI
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>NFT и Marketplace</p>
                         <p className={'font-light'}>Интеграция NFT в экосистему токенов M&V</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         IIX
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Полная децентрализация</p>
                         <p className={'font-light'}>Интеграция искусственного интеллекта</p>
                         <p className={'font-light'}>Cобственная блокчейн-сеть</p>
                     </div>
-                    <div className="flex-shrink-0 bg-transparent xl:w-[128px] lg:w-[48px] w-[24px]"></div>
+                    <div className="flex-shrink-0  xl:w-[128px] lg:w-[48px] w-[24px]"></div>
                 </div>
                 <div className={'flex w-fit h-[25px] '}>
                     <div ref={(el) => (stageRefs.current[0] = el)} className={'bg-[#D8CAA5] xl:w-72 lg:w-64 w-28 rounded-l-xl border-4 border-r-0 border-white'}></div>
@@ -95,50 +95,50 @@ const RoadmapBlock = ({currentStage}) => {
                 </div>
                 <div className="flex text-white  ">
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         I
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Улучшение P2P</p>
                         <p className={'font-light'}>Расширение функционала новостного раздела</p>
                         <p className={'font-semibold'}>Маркетинг</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         III
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Cross-chain</p>
                         <p className={'font-light'}>Тестирование собственного токена</p>
                         <p className={'font-semibold'}>Расширение P2P</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         V
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Расширение функций для бизнеса</p>
                         <p className={'font-light'}>Привлечение инвестиций</p>
                         <p>ㅤ</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         VII
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
+                        className="flex-shrink-0  flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-semibold'}>Глобальное масштабирование</p>
                         <p className={'font-light'}>Добавление социального взаимодействия</p>
                         <p>ㅤ</p>
                     </div>
                     <div
-                        className="flex-shrink-0 bg-transparent flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
+                        className="flex-shrink-0  flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
                         IX
                     </div>
-                    <div className="flex-shrink-0 bg-transparent xl:w-[128px] lg:w-[48px] w-[24px]"></div>
+                    <div className="flex-shrink-0  xl:w-[128px] lg:w-[48px] w-[24px]"></div>
                 </div>
             </div>
         </div>
