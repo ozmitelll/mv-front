@@ -1,13 +1,18 @@
-import { useRef } from 'react';
 import Infinity from '../assets/icons/infinity.svg';
-import BTC from '../assets/icons/btc.svg';
-import Ether from '../assets/icons/eth.svg';
-import Ripple from '../assets/icons/ripple.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import BTC from '../assets/icons/btc.svg'
+import Ether from '../assets/icons/eth.svg'
+import Ripple from '../assets/icons/ripple.svg'
+// const cc = require('cryptocompare')
+//
+// cc.coinList()
+//     .then(coinList => {
+//         console.log(coinList)
+//     })
+//     .catch(console.error)
 const courseData = [
     {
         id: 1,
@@ -72,7 +77,7 @@ const CourseBlock = () => {
                 }}
                 className="w-full px-6 lg:px-16 lg:rounded-xl "
             >
-                {courseData.map((course) => (
+                {courseData && courseData.map((course) => (
                     <SwiperSlide key={course.id}>
                         <div
                             className="bg-black font-urbanist bg-opacity-35 backdrop-blur-sm rounded-lg p-4 lg:w-full w-[300px] md:h-[200px] flex flex-col justify-between drop-shadow-[8px_8px_35px_rgba(45,45,45,1)] shadow-[0_8px_25px_rgba(255,255,255,0.25)]"
