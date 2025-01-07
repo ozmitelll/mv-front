@@ -1,26 +1,20 @@
 import './App.css';
-import WelcomeBlock from "./pages/WelcomeBlock";
-import TradeBlock from "./pages/TradeBlock";
-import ManualBlock from "./pages/ManualBlock";
-import FaqBlock from "./pages/FaqBlock";
-import CourseBlock from "./pages/CourseBlock";
-import Footer from "./components/Footer";
-import RoadmapBlock from "./pages/RoadmapBlock";
 import {useEffect} from "react";
-
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Landing from "./pages/Landing";
+import Policy from "./pages/Policy";
 function App() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
         <div className="bg-main w-screen overflow-hidden">
-            <WelcomeBlock/>
-            <TradeBlock/>
-            <RoadmapBlock currentStage={2}/>
-            <ManualBlock/>
-            <FaqBlock/>
-            <CourseBlock/>
-            <Footer/>
+            <Router>
+                <Switch>
+                    <Route path={'/policy'} component={Policy}/>
+                    <Route path={'/'} component={Landing}/>
+                </Switch>
+            </Router>
         </div>
     );
 }

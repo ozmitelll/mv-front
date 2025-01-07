@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     <div
                         className={'lg:grid flex flex-col grid-rows-2 grid-cols-6 gap-4 font-extralight font-inter w-full'}>
-                        <p className={' text-left w-full col-span-2 hover:underline '}>Политика конфиденциальности</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={()=>window.location.replace('/policy')}>Политика конфиденциальности</p>
                         <p className={' text-left w-full col-span-2 hover:underline'}>Правила пользования сервисом</p>
                         <p className={' text-left w-full col-span-2 hover:underline'}>Предупреждение о рисках</p>
                         <div className={'flex flex-col gap-4 lg:gap-0 lg:flex-row row-start-2 col-span-3 '}>
