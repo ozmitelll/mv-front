@@ -36,12 +36,12 @@ const Footer = () => {
                     <div
                         className={'lg:grid flex flex-col grid-rows-2 grid-cols-6 gap-4 font-extralight font-inter w-full'}>
                         <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={()=>window.location.replace('/policy')}>Политика конфиденциальности</p>
-                        <p className={' text-left w-full col-span-2 hover:underline'}>Правила пользования сервисом</p>
-                        <p className={' text-left w-full col-span-2 hover:underline'}>Предупреждение о рисках</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => window.location.replace('/terms')}>Правила пользования сервисом</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => window.location.replace('/risks')}>Предупреждение о рисках</p>
                         <div className={'flex flex-col gap-4 lg:gap-0 lg:flex-row row-start-2 col-span-3 '}>
-                            <p className={' text-left w-full hover:underline'}>KYC и AML</p>
-                            <p className={' text-left w-full hover:underline'}>Bug bounty</p>
-                            <p className={' text-left w-full hover:underline'}>Cookies</p>
+                            <p className={' text-left w-full hover:underline cursor-pointer'} onClick={() => window.location.replace('/kyc-aml')}>KYC и AML</p>
+                            <p className={' text-left w-full hover:underline cursor-pointer'}>Bug bounty</p>
+                            <p className={' text-left w-full hover:underline cursor-pointer'}>Cookies</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                 <hr className={'lg:block hidden border-t-1 opacity-50 border-[#52A2EC] w-full'}/>
                 <div className={'lg:flex hidden justify-start items-center w-full gap-8 font-inter'}>
                     <img src={HeaderIcon} alt="" className={'w-[140px]'}/>
-                    <p>© 2024, M&V coin</p>
+                    <p>© {new Date().getFullYear()}, M&V coin</p>
                     <p className={'pl-12'}>Information on this website is provided by M&V COIN</p>
                 </div>
             </div>
