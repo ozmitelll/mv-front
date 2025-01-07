@@ -3,6 +3,9 @@ import {useEffect} from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Landing from "./pages/Landing";
 import Policy from "./pages/Policy";
+import RiskWarning from "./pages/RiskWarning";
+import AntiLauderingPolicy from "./pages/AntiLauderingPolicy";
+import TermsOfService from "./pages/TermsOfService";
 function App() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,6 +15,9 @@ function App() {
             <Router>
                 <Switch>
                     <Route path={'/policy'} component={Policy}/>
+                    <Route path={'/terms'} component={TermsOfService}/>
+                    <Route path={'/kyc-aml'} component={AntiLauderingPolicy}/>
+                    <Route path={'/risks'} component={RiskWarning}/>
                     <Route path={'/'} component={Landing}/>
                 </Switch>
             </Router>
