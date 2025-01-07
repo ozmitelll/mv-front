@@ -37,7 +37,7 @@ const RoadmapBlock = ({currentStage}) => {
                 <div className="flex text-white  ">
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>P2P-сервис</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>P2P-сервис</p>
                         <p className={'font-light'}>Приложение позиционируется как глобальная платформа для
                             криптоновостей.</p>
                     </div>
@@ -48,7 +48,7 @@ const RoadmapBlock = ({currentStage}) => {
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
                         <p className={'font-light'}>Внедрение кошелька</p>
-                        <p className={'font-semibold'}>Интеграция платежей</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Интеграция платежей</p>
                         <p className={'font-light'}>Запуск программы лояльности</p>
                     </div>
                     <div
@@ -57,9 +57,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Запуск собственного токена</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Запуск собственного токена</p>
                         <p className={'font-light'}>Развитие экосистемы</p>
-                        <p className={'font-semibold'}>Партнёрства</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Партнёрства</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -67,7 +67,7 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>NFT и Marketplace</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>NFT и Marketplace</p>
                         <p className={'font-light'}>Интеграция NFT в экосистему токенов M&V</p>
                     </div>
                     <div
@@ -76,7 +76,7 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Полная децентрализация</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Полная децентрализация</p>
                         <p className={'font-light'}>Интеграция искусственного интеллекта</p>
                         <p className={'font-light'}>Cобственная блокчейн-сеть</p>
                     </div>
@@ -100,9 +100,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Улучшение P2P</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Улучшение P2P</p>
                         <p className={'font-light'}>Расширение функционала новостного раздела</p>
-                        <p className={'font-semibold'}>Маркетинг</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Маркетинг</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -110,9 +110,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Cross-chain</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Cross-chain</p>
                         <p className={'font-light'}>Тестирование собственного токена</p>
-                        <p className={'font-semibold'}>Расширение P2P</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Расширение P2P</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -120,7 +120,7 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Расширение функций для бизнеса</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Расширение функций для бизнеса</p>
                         <p className={'font-light'}>Привлечение инвестиций</p>
                         <p>ㅤ</p>
                     </div>
@@ -130,7 +130,7 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-28 xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[14px]">
-                        <p className={'font-semibold'}>Глобальное масштабирование</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Глобальное масштабирование</p>
                         <p className={'font-light'}>Добавление социального взаимодействия</p>
                         <p>ㅤ</p>
                     </div>
