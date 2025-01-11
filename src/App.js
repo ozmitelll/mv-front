@@ -18,7 +18,7 @@ function App() {
                     <Route path={'/terms'} component={TermsOfService}/>
                     <Route path={'/kyc-aml'} component={AntiLauderingPolicy}/>
                     <Route path={'/risks'} component={RiskWarning}/>
-                    <Route path={'/'} component={Landing}/>
+                    <Route path={'/'} exact component={Landing}/>
                 </Switch>
             </Router>
         </div>

@@ -7,8 +7,13 @@ import HeaderIcon from '../assets/icons/icon.svg';
 import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
 import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
 import ApkMob from '../assets/icons/SVGAPK.png'
+import {useHistory} from "react-router-dom";
 
 const Footer = () => {
+    const history = useHistory()
+    const handleNavigate = (to) => {
+        history.push(to)
+    }
     return (
         <div
             className={'w-screen flex flex-col justify-center lg:items-center items-start xl:px-36 lg:px-16 px-12 text-white gap-4 pt-12 pb-4'}>
@@ -35,11 +40,11 @@ const Footer = () => {
                     </div>
                     <div
                         className={'lg:grid flex flex-col grid-rows-2 grid-cols-6 gap-4 font-extralight font-inter w-full'}>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={()=>window.location.replace('/policy')}>Политика конфиденциальности</p>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => window.location.replace('/terms')}>Правила пользования сервисом</p>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => window.location.replace('/risks')}>Предупреждение о рисках</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={()=>handleNavigate('/policy')}>Политика конфиденциальности</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => handleNavigate('/terms')}>Правила пользования сервисом</p>
+                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => handleNavigate('/risks')}>Предупреждение о рисках</p>
                         <div className={'flex flex-col gap-4 lg:gap-0 lg:flex-row row-start-2 col-span-3 '}>
-                            <p className={' text-left w-full hover:underline cursor-pointer'} onClick={() => window.location.replace('/kyc-aml')}>KYC и AML</p>
+                            <p className={' text-left w-full hover:underline cursor-pointer'} onClick={() => handleNavigate('/kyc-aml')}>KYC и AML</p>
                             <p className={' text-left w-full hover:underline cursor-pointer'}>Bug bounty</p>
                             <p className={' text-left w-full hover:underline cursor-pointer'}>Cookies</p>
                         </div>
