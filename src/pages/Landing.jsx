@@ -7,15 +7,25 @@ import CourseBlock from "./CourseBlock";
 import Footer from "../components/Footer";
 import {useEffect} from "react";
 
-const Landing = () =>{
+const Landing = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        const handleBeforeUnload = () => {
+            window.scrollTo(0, 0);
+        };
+
+        window.addEventListener("beforeunload", handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
     }, []);
-    return(
+    return (
         <div>
             <WelcomeBlock/>
             <TradeBlock/>
-            <RoadmapBlock currentStage={2}/>
+            <RoadmapBlock currentStage={3}/>
             <ManualBlock/>
             <FaqBlock/>
             <CourseBlock/>

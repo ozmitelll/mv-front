@@ -2,14 +2,14 @@ import Phone from '../assets/icons/Frame.png'
 import AppStore from '../assets/icons/AppStore_PC.png'
 import GooglePlay from '../assets/icons/PlayMarket_PC.png'
 import Apk from '../assets/icons/APK_PC.png'
-import AppStoreMob from '../assets/icons/AppStore_Mob.png'
-import GooglePlayMob from '../assets/icons/GooglePlay_Mob.png'
-import ApkMob from '../assets/icons/Apk_Mob.png'
+import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
+import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
+import ApkMob from '../assets/icons/SVGAPK.png'
 import Header from "../components/Header";
 
 const WelcomeBlock = () => {
     return (
-        <div className={'flex  flex-col items-center justify-center '}>
+        <div className={'flex  flex-col items-center justify-center '} id={'welcome'}>
             <Header/>
             <div
                 className={'w-full xl:h-[636px] h-[730px]  flex flex-col-reverse lg:flex-row  justify-center items-center xl:px-32 lg:px-16'}>
@@ -31,13 +31,13 @@ const WelcomeBlock = () => {
                             <img src={Apk} alt="" width={200} height={50}/>
                         </div>
                     </div>
-                    <div className={'flex flex-col items-center lg:hidden'}>
-                        <div className={'flex'}>
-                            <img src={AppStoreMob} alt="" className="w-[180px] h-[65px] object-cover scale-110"/>
-                            <img src={GooglePlayMob} alt="" className="w-[180px] h-[65px] object-cover scale-110"/>
+                    <div className={'flex flex-col items-center lg:hidden gap-4'}>
+                        <div className={'flex gap-4'}>
+                            <img src={AppStoreMob} alt="" className="h-[38px] object-cover "/>
+                            <img src={GooglePlayMob} alt="" className="h-[38px] object-cover "/>
                         </div>
                         <div>
-                            <img src={ApkMob} alt="" className="w-[180px] h-[65px] object-cover scale-110"/>
+                            <img src={ApkMob} alt="" className="h-[38px] object-cover"/>
                         </div>
                     </div>
                 </div>

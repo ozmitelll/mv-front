@@ -9,7 +9,7 @@ const ManualBlock = () => {
     };
 
     return (
-        <div className={'w-full  bg-[#15344D] flex flex-col justify-start items-center xl:px-36 lg:px-16 px-12'}>
+        <div className={'w-full  bg-[#15344D] flex flex-col justify-start items-center xl:px-36 lg:px-16 px-8'} id="manual">
             <p className={'font-urbanist font-bold lg:text-[35px] text-[25px] text-white md:py-16 py-8 text-left w-full'}>
                 Как совершить обмен BTC на RUB, USD, Qiwi или другую валюту
             </p>
@@ -55,7 +55,7 @@ const ManualBlock = () => {
                     {/* Step 3 */}
                     <div
                         onClick={() => toggleAccordion(3)}
-                        className={`absolute bg-gradient-to-l rounded-[20px] from-[#235379] to-[#517084] w-full ${openIndex === 3 ? 'h-[300px]' : 'h-[130px]'} shadow-[0_-8px_25px_rgba(0,0,0,0.25)] shadow-[#132534] p-4 flex flex-col justify-between items-start transition-all duration-300 hover:-translate-y-2`}
+                        className={`absolute bg-gradient-to-l rounded-[20px] from-[#235379] to-[#517084] w-full ${openIndex === 3 ? 'h-[310px]' : 'h-[130px]'} shadow-[0_-8px_25px_rgba(0,0,0,0.25)] shadow-[#132534] p-4 flex flex-col justify-between items-start transition-all duration-300 hover:-translate-y-2`}
                         style={{ top: `${openIndex=== 1 ? '320px': openIndex === 2 ? '350px' : '210px'}`, zIndex: 2 }}>
                         <div>
                             <p className={'font-urbanist font-bold text-[#D8CAA5] md:text-[20px] text-[18px]'}>Шаг 3:</p>
@@ -73,7 +73,7 @@ const ManualBlock = () => {
                     <div
                         onClick={() => toggleAccordion(4)}
                         className={`absolute bg-gradient-to-l rounded-[20px] from-[#235379] to-[#517084] w-full ${openIndex === 4 ? 'h-[300px]' : 'h-[100px]'} shadow-[0_-8px_25px_rgba(0,0,0,0.25)] shadow-[#132534] p-4 flex flex-col justify-between items-start transition-all duration-300 hover:-translate-y-2`}
-                        style={{ top: `${openIndex===1 ? '410px' : openIndex === 2 ? '440px' : openIndex === 3 ? '490px' : '300px'}`, zIndex: 3 }}>
+                        style={{ top: `${openIndex===1 ? '410px' : openIndex === 2 ? '440px' : openIndex === 3 ? '510px' : '300px'}`, zIndex: 3 }}>
                         <div>
                             <p className={'font-urbanist font-bold text-[#D8CAA5] md:text-[20px] text-[18px]'}>Шаг 4:</p>
                             <p className={'font-urbanist text-white font-semibold md:text-[20px] text-[18px]'}>Выполнить обмен</p>

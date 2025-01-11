@@ -1,15 +1,13 @@
-import {useHistory} from "react-router-dom";
 
 const Policy = () => {
-    const history = useHistory();
     return (
         <div
             className={'bg-main w-full h-full flex flex-col items-center justify-center font-urbanist xl:px-48 lg:px-16 px-12 text-white pb-12'}>
             <div className={'w-full flex items-center justify-center border-b-2 border-black'}>
                 <p className={'text-3xl py-8 w-full'}>Privacy Policy for M&V Coin</p>
-                <div className={'cursor-pointer'} onClick={()=>history.push('/')}>
+                <a className={'cursor-pointer'} href={'/'}>
                     <p className={'text-xl px-4'}>Back</p>
-                </div>
+                </a>
             </div>
             <div className={'w-full flex flex-col items-start justify-center py-8 gap-6'}>
                 <p className={'text-5xl font-semibold'}>Privacy Policy</p>

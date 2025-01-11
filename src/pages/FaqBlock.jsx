@@ -37,11 +37,11 @@ const FaqBlock = () => {
     };
 
     return (
-        <div className="bg-main w-full flex justify-start items-center flex-col xl:px-36 lg:px-16 px-12 pb-16">
+        <div className="bg-main w-full h-full flex justify-start items-center flex-col xl:px-36 lg:px-16 px-12 pb-16" id="faq">
             <p className="font-urbanist font-bold lg:text-[35px] text-[20px] text-white py-12 text-left w-full">
                 Ответы на популярные вопросы
             </p>
-            <div className="w-full bg-white h-f pb-4 px-6 rounded-xl drop-shadow-md shadow-[15px_15px_25px_rgba(0,0,0,0.25)]">
+            <div className="w-full bg-white  px-6 rounded-xl drop-shadow-md shadow-[15px_15px_25px_rgba(0,0,0,0.25)]">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}

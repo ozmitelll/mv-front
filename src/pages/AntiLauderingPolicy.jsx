@@ -4,9 +4,9 @@ const AntiLauderingPolicy = () => {
             className={'bg-main w-full h-full flex flex-col items-center justify-center font-urbanist xl:px-48 lg:px-16 px-12 text-white pb-12'}>
             <div className={'w-full flex items-center justify-center border-b-2 border-black'}>
                 <p className={'text-3xl py-8 w-full'}>Anti-Money Laundering Policy (KYC and AML)</p>
-                <div className={'cursor-pointer'} onClick={() => window.location.replace('/')}>
+                <a className={'cursor-pointer'} href={'/'}>
                     <p className={'text-xl px-4'}>Back</p>
-                </div>
+                </a>
             </div>
             <div className={'w-full flex flex-col items-start justify-center py-8 gap-6'}>
                 {/* 1. Introduction */}

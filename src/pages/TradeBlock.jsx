@@ -5,7 +5,7 @@ import Devices from '../assets/icons/devices.svg'
 import Night from '../assets/icons/night.svg'
 const TradeBlock = () => {
     return(
-        <div className={'bg-[#1C4566] w-full flex justify-start items-center flex-col xl:px-36 lg:px-16 px-12'}>
+        <div className={'bg-[#1C4566] w-full flex justify-start items-center flex-col xl:px-36 lg:px-16 px-12'} id={'trade'}>
             <p className={'text-white lg:text-[35px] text-[25px] font-urbanist lg:py-16 py-8 text-left w-full'}>Обмен в <span className={'font-bold'}>M&V coin</span><span className={'text-[#D8CAA5] font-bold font-inter'}> просто, быстро</span> и<span className={'text-[#D8CAA5] font-bold font-inter'}> надежно</span></p>
             <div className={'grid lg:grid-cols-6 lg:grid-rows-2 grid-cols-1 gap-6 pb-24'}>
                 <div
