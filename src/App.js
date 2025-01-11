@@ -5,8 +5,9 @@ import Policy from "./pages/Policy";
 import RiskWarning from "./pages/RiskWarning";
 import AntiLauderingPolicy from "./pages/AntiLauderingPolicy";
 import TermsOfService from "./pages/TermsOfService";
-function App() {
 
+
+function App() {
     return (
         <div className="bg-main w-screen overflow-hidden">
             <Router>

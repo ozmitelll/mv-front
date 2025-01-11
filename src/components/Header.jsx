@@ -3,7 +3,13 @@ import HeaderIcon from '../assets/icons/icon.svg';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setMenuOpen(false); // Закрыть мобильное меню
+        }
+    };
     return (
         <div className="w-screen bg-main h-[100px] flex items-center justify-between px-4 xl:px-28 lg:px-16">
             {/* Логотип */}
@@ -13,11 +19,11 @@ const Header = () => {
 
             {/* Меню для великих екранів */}
             <div className="hidden lg:flex items-center justify-center xl:gap-16 lg:gap-8 text-white">
-                <a href="">Преимущества</a>
-                <a href="">Карта реализации</a>
-                <a href="">Процесс обмена</a>
-                <a href="">FAQ</a>
-                <a href="">RU</a>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('trade')}>Преимущества</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('roadmap')}>Карта реализации</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('manual')}>Процесс обмена</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('faq')}>FAQ</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('welcome')}>RU</p>
             </div>
 
             {/* Кнопка гамбургер для мобільних */}
@@ -36,19 +42,36 @@ const Header = () => {
                     menuOpen ? 'translate-x-0' : '-translate-x-full'
                 } xl:hidden`}
             >
-                <a href="" className="block py-5 text-left px-10 text-[18px]  border-gray-600">
+                <button
+                    onClick={() => scrollToSection('trade')}
+                    className="block py-5 text-left px-10 text-[18px] border-gray-600"
+                >
                     Преимущества
-                </a>
-                <a href="" className="block py-5 text-left px-10 text-[18px]  border-gray-600">
+                </button>
+                <button
+                    onClick={() => scrollToSection('roadmap')}
+                    className="block py-5 text-left px-10 text-[18px] border-gray-600"
+                >
                     Карта реализации
-                </a>
-                <a href="" className="block py-5 text-left px-10 text-[18px]  border-gray-600">
+                </button>
+                <button
+                    onClick={() => scrollToSection('manual')}
+                    className="block py-5 text-left px-10 text-[18px] border-gray-600"
+                >
                     Процесс обмена
-                </a>
-                <a href="" className="block py-5 text-left px-10 text-[18px]  border-gray-600">
+                </button>
+                <button
+                    onClick={() => scrollToSection('faq')}
+                    className="block py-5 text-left px-10 text-[18px] border-gray-600"
+                >
                     FAQ
-                </a>
-                <a href="" className="block py-5 text-left px-10 text-[18px]">RU</a>
+                </button>
+                <button
+                    onClick={() => scrollToSection('welcome')}
+                    className="block py-5 text-left px-10 text-[18px]"
+                >
+                    RU
+                </button>
             </div>
         </div>
     );

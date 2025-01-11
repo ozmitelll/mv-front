@@ -27,6 +27,7 @@ const RoadmapBlock = ({currentStage}) => {
     return (
         <div
             ref={roadmapRef}
+            id="roadmap"
             className={'w-full xl:h-screen lg:h-screen h-full bg-gradient-to-r from-[#112636] to-[#6999BF] flex flex-col items-center justify-center'}>
             <p className="font-urbanist font-medium lg:text-[35px] text-[25px] text-white pb-12 pt-12 lg:pt-0 xl:pt-0 text-left w-full xl:px-36 lg:px-16 px-12">
                 Roadmap

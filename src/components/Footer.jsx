@@ -7,15 +7,11 @@ import HeaderIcon from '../assets/icons/icon.svg';
 import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
 import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
 import ApkMob from '../assets/icons/SVGAPK.png'
-import {useHistory} from "react-router-dom";
 
 const Footer = () => {
-    const history = useHistory()
-    const handleNavigate = (to) => {
-        history.push(to)
-    }
     return (
         <div
+            id="footer"
             className={'w-screen flex flex-col justify-center lg:items-center items-start xl:px-36 lg:px-16 px-12 text-white gap-4 pt-12 pb-4'}>
             <div
                 className={'w-full flex flex-row-reverse lg:flex-col justify-center lg:items-center items-start text-white gap-4'}>
@@ -30,7 +26,9 @@ const Footer = () => {
                             <img src={GooglePlayMob} alt="" className={'drop-shadow-2xl shadow-2xl h-[34px]'}/>
                             <img src={ApkMob} alt="" className={'drop-shadow-2xl   shadow-2xl h-[34px]'}/>
                         </div>
-                        <img src={Telegram} alt="" className={' w-[50px] h-[50px]'}/>
+                        <a href="https://t.me/BwIXwBxzI685YTQy">
+                            <img src={Telegram} alt="" className={' w-[50px] h-[50px]'}/>
+                        </a>
                     </div>
                 </div>
                 <div className={'flex lg:flex-row flex-col justify-start w-full lg:gap-8 gap-4 '}>
@@ -40,11 +38,11 @@ const Footer = () => {
                     </div>
                     <div
                         className={'lg:grid flex flex-col grid-rows-2 grid-cols-6 gap-4 font-extralight font-inter w-full'}>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={()=>handleNavigate('/policy')}>Политика конфиденциальности</p>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => handleNavigate('/terms')}>Правила пользования сервисом</p>
-                        <p className={' text-left w-full col-span-2 hover:underline cursor-pointer'} onClick={() => handleNavigate('/risks')}>Предупреждение о рисках</p>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/policy'}>Политика конфиденциальности</a>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/terms'} >Правила пользования сервисом</a>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/risks'}>Предупреждение о рисках</a>
                         <div className={'flex flex-col gap-4 lg:gap-0 lg:flex-row row-start-2 col-span-3 '}>
-                            <p className={' text-left w-full hover:underline cursor-pointer'} onClick={() => handleNavigate('/kyc-aml')}>KYC и AML</p>
+                            <a className={' text-left w-full hover:underline cursor-pointer'} href={'/kyc-aml'}>KYC и AML</a>
                             <p className={' text-left w-full hover:underline cursor-pointer'}>Bug bounty</p>
                             <p className={' text-left w-full hover:underline cursor-pointer'}>Cookies</p>
                         </div>
@@ -56,7 +54,9 @@ const Footer = () => {
                         <img src={GooglePlay} alt="" className={'drop-shadow-2xl w-[160px] h-[70px]'}/>
                         <img src={Apk} alt="" className={'drop-shadow-2xl w-[160px] h-[70px]'}/>
                     </div>
-                    <img src={Telegram} alt="" className={'l-5 w-[50px] h-[50px]'}/>
+                    <a href="https://t.me/BwIXwBxzI685YTQy">
+                        <img src={Telegram} alt="" className={'l-5 w-[50px] h-[50px]'}/>
+                    </a>
                 </div>
                 <hr className={'lg:block hidden border-t-1 opacity-50 border-[#52A2EC] w-full'}/>
                 <div className={'lg:flex hidden justify-start items-center w-full gap-8 font-inter'}>
