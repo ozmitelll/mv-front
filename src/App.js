@@ -1,5 +1,4 @@
 import './App.css';
-import {useEffect} from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Landing from "./pages/Landing";
 import Policy from "./pages/Policy";
@@ -7,9 +6,7 @@ import RiskWarning from "./pages/RiskWarning";
 import AntiLauderingPolicy from "./pages/AntiLauderingPolicy";
 import TermsOfService from "./pages/TermsOfService";
 function App() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+
     return (
         <div className="bg-main w-screen overflow-hidden">
             <Router>
