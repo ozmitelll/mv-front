@@ -13,7 +13,7 @@ const TradeBlock = () => {
                     <div className=" md:mb-4 mb-2 flex justify-start lg:items-start items-center md:gap-6 gap-4">
                         <img src={Transfer} alt=""
                              className={'w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[90px] lg:h-[80px]'}/>
-                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[22px]'}>Автоматическая
+                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[16px]'}>Автоматическая
                             система
                             перевода</p>
                     </div>
@@ -27,7 +27,7 @@ const TradeBlock = () => {
                     <div className=" md:mb-4 mb-2 flex justify-start  lg:items-start items-center md:gap-6 gap-4">
                         <img src={Guard} alt=""
                              className={'w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px]'}/>
-                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[22px]'}>Достоверная
+                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[16px]'}>Достоверная
                             информация</p>
                     </div>
                     <p className="font-inter md:text-[16px] text-[14px] ">
@@ -40,7 +40,7 @@ const TradeBlock = () => {
                     <div className=" md:mb-4 mb-2 flex justify-start  lg:items-start items-center  md:gap-6 gap-4">
                         <img src={Graph} alt=""
                              className={'w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px]'}/>
-                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[22px]'}>Множество
+                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[16px]'}>Множество
                             предложений</p>
                     </div>
                     <p className="font-inter md:text-[16px] text-[14px]">
@@ -48,11 +48,11 @@ const TradeBlock = () => {
                     </p>
                 </div>
                 <div
-                    className="bg-white p-4 rounded-[20px] shadow-lg shadow-[#15344D]/50 lg:col-span-2 xl:h-[220px] lg:h-[240px] md:h-[200px] h-[160px]">
+                    className="bg-white p-4 rounded-[20px] shadow-lg shadow-[#15344D]/50 lg:col-span-2 xl:h-[220px] lg:h-[240px] md:h-[200px] h-[170px]">
                     <div className=" md:mb-4 mb-2 flex justify-start  lg:items-start items-center  md:gap-6 gap-4">
                         <img src={Devices} alt=""
                              className={'w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px]'}/>
-                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[22px]'}>Быстрая
+                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[16px]'}>Быстрая
                             регистрация</p>
                     </div>
                     <p className="font-inter md:text-[16px] text-[14px]">
@@ -61,11 +61,11 @@ const TradeBlock = () => {
                     </p>
                 </div>
                 <div
-                    className="bg-white p-4 rounded-[20px] shadow-lg shadow-[#15344D]/50 lg:col-span-2 xl:h-[220px] lg:h-[240px] md:h-[200px] h-[160px]">
+                    className="bg-white p-4 rounded-[20px] shadow-lg shadow-[#15344D]/50 lg:col-span-2 xl:h-[220px] lg:h-[240px] md:h-[200px] h-[170px]">
                     <div className=" md:mb-4 mb-2 flex justify-start  lg:items-start items-center  md:gap-6 gap-4">
                         <img src={Night} alt=""
                              className={'w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[60px] lg:h-[70px]'}/>
-                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[22px]'}>Доступность</p>
+                        <p className={'text-main font-bold font-urbanist xl:text-[28px] text-[16px]'}>Доступность</p>
                     </div>
                     <p className="font-inter md:text-[16px] text-[14px]">
                         Любой клиент может купить биткоин днем и ночью, без комиссии сервиса за ввод и вывод средств и
