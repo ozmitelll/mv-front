@@ -7,8 +7,10 @@ import HeaderIcon from '../assets/icons/icon.svg';
 import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
 import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
 import ApkMob from '../assets/icons/SVGAPK.png'
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+    const {t} = useTranslation()
     return (
         <div
             id="footer"
@@ -16,10 +18,10 @@ const Footer = () => {
             <div
                 className={'w-full flex flex-row-reverse lg:flex-col justify-center lg:items-center items-start text-white gap-4'}>
                 <div className={'flex flex-col justify-center items-start lg:w-full w-3/5 gap-4'}>
-                    <p className={'font-inter font-extrabold text-left w-full lg:text-[25px] text-[18px]'}>O M&V
+                    <p className={'font-inter font-extrabold text-left w-full lg:text-[25px] text-[18px]'}>{t('footer_about1')}M&V
                         coin</p>
-                    <p className={'font-urbanist underline text-left w-full '}>О нас</p>
-                    <p className={'font-urbanist underline text-left w-full '}>Контакты</p>
+                    <p className={'font-urbanist underline text-left w-full '}>{t('footer_about2')}</p>
+                    <p className={'font-urbanist underline text-left w-full '}>{t('footer_contacts')}</p>
                     <div className={'flex lg:hidden flex-col-reverse items-start justify-between w-full gap-4'}>
                         <div className={'flex flex-col gap-4'}>
                             <img src={AppStoreMob} alt="" className={'drop-shadow-2xl   shadow-2xl h-[34px]'}/>
@@ -33,18 +35,17 @@ const Footer = () => {
                 </div>
                 <div className={'flex lg:flex-row flex-col justify-start w-full lg:gap-8 gap-4 '}>
                     <div className={'lg:w-1/4 w-full'}>
-                        <p className={'font-inter font-semibold text-left w-full lg:text-[18px] text-[17px]'}>Правовая
-                            информация</p>
+                        <p className={'font-inter font-semibold text-left w-full lg:text-[18px] text-[17px]'}>{t('footer_info1')}</p>
                     </div>
                     <div
                         className={'lg:grid flex flex-col grid-rows-2 grid-cols-6 gap-4 font-extralight font-inter w-full'}>
-                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/policy'}>Политика конфиденциальности</a>
-                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/terms'} >Правила пользования сервисом</a>
-                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/risks'}>Предупреждение о рисках</a>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/policy'}>{t('footer_info2')}</a>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/terms'} >{t('footer_info3')}</a>
+                        <a className={' text-left w-full col-span-2 hover:underline cursor-pointer'} href={'/risks'}>{t('footer_info4')}</a>
                         <div className={'flex flex-col gap-4 lg:gap-0 lg:flex-row row-start-2 col-span-3 '}>
-                            <a className={' text-left w-full hover:underline cursor-pointer'} href={'/kyc-aml'}>KYC и AML</a>
-                            <p className={' text-left w-full hover:underline cursor-pointer'}>Bug bounty</p>
-                            <p className={' text-left w-full hover:underline cursor-pointer'}>Cookies</p>
+                            <a className={' text-left w-full hover:underline cursor-pointer'} href={'/kyc-aml'}>{t('footer_info5')}</a>
+                            <p className={' text-left w-full hover:underline cursor-pointer'}>{t('footer_info6')}</p>
+                            <p className={' text-left w-full hover:underline cursor-pointer'}>{t('footer_info7')}</p>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,7 @@ const Footer = () => {
                 <div className={'lg:flex hidden justify-start items-center w-full gap-8 font-inter'}>
                     <img src={HeaderIcon} alt="" className={'w-[140px]'}/>
                     <p>© {new Date().getFullYear()}, M&V coin</p>
-                    <p className={'pl-12'}>Information on this website is provided by M&V COIN</p>
+                    <p className={'pl-12'}>{t('footer_copyright')}</p>
                 </div>
             </div>
             <hr className={'lg:hidden border-t-1 opacity-50 border-[#52A2EC] w-full'}/>
@@ -71,7 +72,7 @@ const Footer = () => {
                 <img src={HeaderIcon} alt="" className={'w-[140px]'}/>
                 <p>© {new Date().getFullYear()}, M&V coin</p>
                 </div>
-                <p className={'w-full text-[12px] font-inter text-center'}>Information on this website is provided by M&V COIN</p>
+                <p className={'w-full text-[12px] font-inter text-center'}>{t('footer_copyright')}</p>
             </div>
         </div>
     )

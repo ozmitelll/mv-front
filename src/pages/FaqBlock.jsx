@@ -1,34 +1,29 @@
 import { useState } from "react";
+import {useTranslation} from "react-i18next";
 
 const FaqBlock = () => {
     const [activeIndex, setActiveIndex] = useState(null);
-
+    const {t} = useTranslation();
     const faqs = [
         {
-            question: "Что такое BEP_20, TRC_20, ERC_20 и чем они отличаются?",
-            answer:
-                "Это протоколы Tether USDT в разных блокчейнах. Изначально Tether USDT был выпущен на блокчейне Bitcoin (использовался протокол OMNI), но стейблкоин так быстро набрал популярность, что был запущен и на других блокчейнах:\n" +
-                "- ERC_20 — протокол в блокчейне Ethereum;\n" +
-                "- TRC_20 — протокол в блокчейне Tron;\n" +
-                "- BEP_2 — протокол в блокчейне Binance;\n" +
-                "- BEP_20 — протокол в BSC.\n" +
-                "Каждый тип USDT обращается только в рамках своего блокчейна. Не стоит пытаться отправить USDT из блокчейна Ethereum в Tron или наоборот. Есть шанс, что вы потеряете свои деньги.",
+            question: t('question1'),
+            answer: t('answer1'),
         },
         {
-            question: "Можно ли во время регистрации ввести email, а не номер телефона?",
-            answer: "Сейчас регистрация возможна с помощью месенджера или личного номера телефона. В ближайшее время появится регистрация через email.",
+            question: t('question2'),
+            answer: t('answer2'),
         },
         {
-            question: "Я отправил деньги, а вторая сторона пишет, что не получила их. Что делать?",
-            answer: "В таком случае нужно убедиться, что вы отправили деньги по нужным реквизитам. Если вы не ошиблись и перевод ушел к адресату, то создайте спор — модераторы разберутся в ситуации, запросят доказательства от обеих сторон и примут верное решение.",
+            question: t('question3'),
+            answer: t('answer3'),
         },
         {
-            question: "Что кроме регистрации нужно, чтобы совершать сделки на M&V coin?",
-            answer: "Чтобы обменивать криптовалюту на rub, usd и другие валюты, нужно пройти верификацию. Для этого зайдите на сайт, перейдите в личный кабинет, выберите тип документов, который будете использовать для верификации и загрузите селфи.",
+            question: t('question4'),
+            answer: t('answer4'),
         },
         {
-            question: "Где можно посмотреть все правила сервиса M&V coin?",
-            answer: "Нужно зайти на сайт M&V coin пролистать страницу вниз и перейти в раздел «Правила пользования сервисом. Там будут описаны все нюансы, которые вы должны знать, чтобы безопасно работать с площадкой.",
+            question: t('question5'),
+            answer: t('answer5'),
         },
     ];
 
@@ -39,7 +34,7 @@ const FaqBlock = () => {
     return (
         <div className="bg-main w-full h-full flex justify-start items-center flex-col xl:px-36 lg:px-16 px-12 pb-16" id="faq">
             <p className="font-urbanist font-bold lg:text-[35px] text-[20px] text-white py-12 text-left w-full">
-                Ответы на популярные вопросы
+                {t('faq_title')}
             </p>
             <div className="w-full bg-white  px-6 rounded-xl drop-shadow-md shadow-[15px_15px_25px_rgba(0,0,0,0.25)]">
                 {faqs.map((faq, index) => (

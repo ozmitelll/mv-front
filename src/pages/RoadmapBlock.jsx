@@ -1,9 +1,10 @@
 import {useEffect, useRef} from "react";
+import {useTranslation} from "react-i18next";
 
 const RoadmapBlock = ({currentStage}) => {
     const roadmapRef = useRef(null);
     const stageRefs = useRef([]);
-
+    const {t} = useTranslation();
     useEffect(() => {
         if (roadmapRef.current) {
             const isLastStage = currentStage === 9;
@@ -30,7 +31,7 @@ const RoadmapBlock = ({currentStage}) => {
             id="roadmap"
             className={'w-full xl:h-screen lg:h-screen h-full bg-gradient-to-r from-[#112636] to-[#6999BF] flex flex-col items-center justify-center'}>
             <p className="font-urbanist font-medium lg:text-[35px] text-[25px] text-white pb-12 pt-12 lg:pt-0 xl:pt-0 text-left w-full xl:px-36 lg:px-16 px-12">
-                Roadmap
+                {t('h_roadmap')}
             </p>
             <div
 
@@ -38,9 +39,8 @@ const RoadmapBlock = ({currentStage}) => {
                 <div className="flex text-white  ">
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>P2P-сервис</p>
-                        <p className={'font-light'}>Приложение позиционируется как глобальная платформа для
-                            криптоновостей.</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h1')}</p>
+                        <p className={'font-light'}>{t('r_h2')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -48,9 +48,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'font-light'}>Внедрение кошелька</p>
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Интеграция платежей</p>
-                        <p className={'font-light'}>Запуск программы лояльности</p>
+                        <p className={'font-light'}>{t('r_h3')}</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h4')}</p>
+                        <p className={'font-light'}>{t('r_h5')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -58,9 +58,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Запуск собственного токена</p>
-                        <p className={'font-light'}>Развитие экосистемы</p>
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Партнёрства</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h6')}</p>
+                        <p className={'font-light'}>{t('r_h7')}</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h8')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -68,8 +68,8 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>NFT и Marketplace</p>
-                        <p className={'font-light'}>Интеграция NFT в экосистему токенов M&V</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h9')}</p>
+                        <p className={'font-light'}>{t('r_h10')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-end items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -77,9 +77,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Полная децентрализация</p>
-                        <p className={'font-light'}>Интеграция искусственного интеллекта</p>
-                        <p className={'font-light'}>Cобственная блокчейн-сеть</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h11')}</p>
+                        <p className={'font-light'}>{t('r_h12')}</p>
+                        <p className={'font-light'}>{t('r_h13')}</p>
                     </div>
                     <div className="flex-shrink-0 bg-opacity-0 xl:w-[128px] lg:w-[48px] w-[24px]"></div>
                 </div>
@@ -101,9 +101,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Улучшение P2P</p>
-                        <p className={'font-light'}>Расширение функционала новостного раздела</p>
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Маркетинг</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h14')}</p>
+                        <p className={'font-light'}>{t('r_h15')}</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h16')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -111,9 +111,9 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Cross-chain</p>
-                        <p className={'font-light'}>Тестирование собственного токена</p>
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Расширение P2P</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h17')}</p>
+                        <p className={'font-light'}>{t('r_h18')}</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h19')}</p>
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col justify-start items-center xl:text-8xl lg:text-8xl text-6xl text-[#D8CAA5] bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] rounded-lg xl:p-4 lg:p-4 p-0">
@@ -121,8 +121,8 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Расширение функций для бизнеса</p>
-                        <p className={'font-light'}>Привлечение инвестиций</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h20')}</p>
+                        <p className={'font-light'}>{t('r_h21')}</p>
                         <p>ㅤ</p>
                     </div>
                     <div
@@ -131,8 +131,8 @@ const RoadmapBlock = ({currentStage}) => {
                     </div>
                     <div
                         className="flex-shrink-0 bg-opacity-0 flex flex-col xl:justify-start lg:justify-start justify-end gap-4 bg-white xl:w-72 lg:w-64 w-[120px] xl:h-[200px] lg:h-[200px] h-[240px] xl:p-4 lg:p-4 p-0 text-[15px]">
-                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>Глобальное масштабирование</p>
-                        <p className={'font-light'}>Добавление социального взаимодействия</p>
+                        <p className={'xl:font-semibold lg:font-semibold font-bold'}>{t('r_h22')}</p>
+                        <p className={'font-light'}>{t('r_h23')}</p>
                         <p>ㅤ</p>
                     </div>
                     <div
