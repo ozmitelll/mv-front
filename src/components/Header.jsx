@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import HeaderIcon from '../assets/icons/icon.svg';
+import { useTranslation } from "react-i18next";
+import dropArrow from '../assets/icons/arrow-down-svgrepo-com.svg'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false); // Для выпадающего меню языка
+    const { t, i18n } = useTranslation();
+
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -10,6 +15,13 @@ const Header = () => {
             setMenuOpen(false); // Закрыть мобильное меню
         }
     };
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang); // Смена языка
+        setLanguageMenuOpen(false);
+        setMenuOpen(false)// Закрыть меню выбора языка
+    };
+
     return (
         <div className="w-screen bg-main h-[100px] flex items-center justify-between px-4 xl:px-28 lg:px-16">
             {/* Логотип */}
@@ -19,11 +31,37 @@ const Header = () => {
 
             {/* Меню для великих екранів */}
             <div className="hidden lg:flex items-center justify-center xl:gap-16 lg:gap-8 text-white">
-                <p className={'cursor-pointer'} onClick={() => scrollToSection('trade')}>Преимущества</p>
-                <p className={'cursor-pointer'} onClick={() => scrollToSection('roadmap')}>Карта реализации</p>
-                <p className={'cursor-pointer'} onClick={() => scrollToSection('manual')}>Процесс обмена</p>
-                <p className={'cursor-pointer'} onClick={() => scrollToSection('faq')}>FAQ</p>
-                <p className={'cursor-pointer'} onClick={() => scrollToSection('welcome')}>RU</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('trade')}>{t('h_trade')}</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('roadmap')}>{t('h_roadmap')}</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('manual')}>{t('h_manual')}</p>
+                <p className={'cursor-pointer'} onClick={() => scrollToSection('faq')}>{t('h_faq')}</p>
+
+                {/* Блок выбора языка */}
+                <div className="relative flex justify-center items-center gap-2">
+                    <p
+                        className="cursor-pointer"
+                        onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                    >
+                        {i18n.language.toUpperCase()}
+                    </p>
+                    <img src={dropArrow} alt="" className={'h-4 w-4'}/>
+                    {languageMenuOpen && (
+                        <div className="absolute top-8 -right-1 bg-white text-black shadow-md rounded-md">
+                            <p
+                                className="cursor-pointer px-4 py-2 hover:bg-gray-200 hover:rounded-md"
+                                onClick={() => changeLanguage('en')}
+                            >
+                                EN
+                            </p>
+                            <p
+                                className="cursor-pointer px-4 py-2 hover:bg-gray-200 hover:rounded-md"
+                                onClick={() => changeLanguage('ru')}
+                            >
+                                RU
+                            </p>
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Кнопка гамбургер для мобільних */}
@@ -46,32 +84,55 @@ const Header = () => {
                     onClick={() => scrollToSection('trade')}
                     className="block py-5 text-left px-10 text-[18px] border-gray-600"
                 >
-                    Преимущества
+                    {t('h_trade')}
                 </button>
                 <button
                     onClick={() => scrollToSection('roadmap')}
                     className="block py-5 text-left px-10 text-[18px] border-gray-600"
                 >
-                    Карта реализации
+                    {t('h_roadmap')}
                 </button>
                 <button
                     onClick={() => scrollToSection('manual')}
                     className="block py-5 text-left px-10 text-[18px] border-gray-600"
                 >
-                    Процесс обмена
+                    {t('h_manual')}
                 </button>
                 <button
                     onClick={() => scrollToSection('faq')}
                     className="block py-5 text-left px-10 text-[18px] border-gray-600"
                 >
-                    FAQ
+                    {t('h_faq')}
                 </button>
-                <button
-                    onClick={() => scrollToSection('welcome')}
-                    className="block py-5 text-left px-10 text-[18px]"
-                >
-                    RU
-                </button>
+
+                {/* Блок выбора языка в мобильном меню */}
+                <div className="px-10 py-5 border-gray-600 text-[18px]">
+                    <div className="relative flex items-center gap-2">
+                        <p
+                            className="cursor-pointer"
+                            onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                        >
+                            {i18n.language.toUpperCase()}
+                        </p>
+                        <img src={dropArrow} alt="" className={'h-4 w-4'}/>
+                        {languageMenuOpen && (
+                            <div className="absolute top-10 -left-2  bg-white text-black shadow-md rounded-md">
+                                <p
+                                    className="cursor-pointer px-4 py-2 hover:bg-gray-200 hover:rounded-md"
+                                    onClick={() => changeLanguage('en')}
+                                >
+                                    EN
+                                </p>
+                                <p
+                                    className="cursor-pointer px-4 py-2 hover:bg-gray-200 hover:rounded-md"
+                                    onClick={() => changeLanguage('ru')}
+                                >
+                                    RU
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     );

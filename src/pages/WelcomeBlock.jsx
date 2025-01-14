@@ -6,8 +6,10 @@ import AppStoreMob from '../assets/icons/SVGAPPSTORE.png'
 import GooglePlayMob from '../assets/icons/SVGGOOGLEPLAY.png'
 import ApkMob from '../assets/icons/SVGAPK.png'
 import Header from "../components/Header";
+import {useTranslation} from "react-i18next";
 
 const WelcomeBlock = () => {
+    const {t} = useTranslation()
     return (
         <div className={'flex  flex-col items-center justify-center '} id={'welcome'}>
             <Header/>
@@ -16,11 +18,8 @@ const WelcomeBlock = () => {
                 <div className={'flex flex-col justify-center items-center lg:w-1/2 gap-8'}>
                     <div className={'lg:px-0 lg:pl-8 px-12'}>
                         <p className={'text-white font-extrabold lg:text-[55px] md:text-[30px] text-[25px] font-urbanist'}>M&V coin</p>
-                        <p className={'text-white font-extralight lg:text-[35px] md:text-[25px] text-[20px] text-left text-balance'}>Безопастный
-                            обмен</p>
-                        <p className={'text-white font-extralight lg:text-[35px] md:text-[25px] text-[20px] text-left text-balance'}>криптовалюты,
-                            выгодный
-                            курс, большой выбор платежных систем</p>
+                        <p className={'text-white font-extralight lg:text-[35px] md:text-[25px] text-[20px] text-left text-balance'}>{t('w_title')}</p>
+                        <p className={'text-white font-extralight lg:text-[35px] md:text-[25px] text-[20px] text-left text-balance'}>{t('w_subtitle')}</p>
                     </div>
                     <div className={'lg:flex flex-col items-center hidden'}>
                         <div className={'flex'}>

@@ -8,6 +8,7 @@ import BTC from '../assets/icons/btc.svg';
 import Ether from '../assets/icons/eth.svg';
 import Ripple from '../assets/icons/ripple.svg';
 import cc from 'cryptocompare';
+import {useTranslation} from "react-i18next";
 
 cc.setApiKey('cb4d546d01aab468ad5619145220c0ac306cefbf440b3469f0a3ebbc5deb18df');
 
@@ -19,7 +20,7 @@ const initialCourseData = [
 
 const CourseBlock = () => {
     const [courseData, setCourseData] = useState(initialCourseData);
-
+    const {t} = useTranslation();
     useEffect(() => {
         const fetchCourseData = async () => {
             try {
@@ -66,7 +67,7 @@ const CourseBlock = () => {
                     'absolute top-0 xl:left-36 lg:left-20 left-14 font-urbanist font-bold lg:text-[35px] text-[25px] text-white md:py-16 py-8 text-left w-full'
                 }
             >
-                Самые точные курсы криптовалют онлайн
+                {t('course_title')}
             </p>
             <Swiper
                 pagination={{ clickable: true }}
@@ -98,10 +99,10 @@ const CourseBlock = () => {
                             </div>
                             <div className="mt-4 space-y-2">
                                 <p className="text-gray-400 text-sm flex justify-between">
-                                    Капитализация: <span className="text-white">{course.capitalization}</span>
+                                    {t('capitalization')}<span className="text-white">{course.capitalization}</span>
                                 </p>
                                 <p className="text-gray-400 text-sm flex justify-between">
-                                    Количество (в обращении): <span className="text-white">{course.supply}</span>
+                                    {t('supply')}<span className="text-white">{course.supply}</span>
                                 </p>
                             </div>
                         </div>
