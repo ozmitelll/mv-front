@@ -6,6 +6,7 @@ import FaqBlock from "./FaqBlock";
 import CourseBlock from "./CourseBlock";
 import Footer from "../components/Footer";
 import {useEffect} from "react";
+import ExchangeBlock from "./ExchangeBlock";
 
 const Landing = () => {
     useEffect(() => {
@@ -24,6 +25,7 @@ const Landing = () => {
     return (
         <div>
             <WelcomeBlock/>
+            <ExchangeBlock/>
             <TradeBlock/>
             <RoadmapBlock currentStage={3}/>
             <ManualBlock/>
